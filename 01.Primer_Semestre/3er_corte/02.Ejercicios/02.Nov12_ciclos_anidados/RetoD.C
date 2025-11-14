@@ -2,7 +2,7 @@
 
 int main(){
 
-    int contador, contador2, j, a;
+    int contador, contador2, j;
 
     printf("Hasta que numero quieres llegar?");
     if (scanf("%d", &contador) != 1){
@@ -13,16 +13,13 @@ int main(){
     }
 
     contador2 = contador;
-    a = contador;
     j = 0;
     for (int i = contador; i >= 0; i--){ 
-        while (a>=j){ 
+        while (contador2>=j){ 
             printf("%d ", contador2);
             contador2 -= 1;
-            a--; 
         }
         j++;
-        a = contador;
         contador2 = contador;
         printf("\n");
     }
