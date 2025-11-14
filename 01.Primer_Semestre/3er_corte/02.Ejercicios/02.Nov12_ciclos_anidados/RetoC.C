@@ -20,13 +20,14 @@ int main(){
         printf("Favor de meter numeros mayores a 0");
     }
 
-    for (int i = 0; i < cont1; i++){ //cont1 = 3; 
-        printf("Hola \n"); //i = 0;
-        while (i < cont1){ //0 < 3;
-            for (int j = 0; j < cont2;j++){ //cont2 = 2
-                printf("Mundo "); //j = 0
+    for (int i = 0; i < cont1; i++){
+        printf("Hola \n"); 
+        if (i < cont1){
+            for (int j = 0; j < cont2;j++){
+                printf("Mundo ");
             }
-        } //Nunca sale del while
+            printf("\n");
+        }
     }
     
     return 0;
